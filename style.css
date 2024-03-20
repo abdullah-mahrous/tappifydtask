@@ -1,0 +1,284 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #0f1e35;
+}
+
+.main-section
+{
+    font-family: DM Sans,sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-header
+{
+    font-size: 64px;
+    line-height: 84px;
+    color: white;
+    text-align: center;
+    width: 50.8%;
+    font-family: DM Sans, sans-serif;
+}
+
+.section-text
+{
+    color: rgba(255, 255, 255, .7);
+    font-size: 24px;
+    line-height: 36px;
+    width: 700px;
+    text-align: center;
+}
+
+.sm-section-text
+{
+    font-size: 75%;
+}
+
+.mobilo-card
+{
+    border-radius: 9px;
+    transition: all 0.01s ease-in-out;
+    will-change: opacity, transform;
+    transform-style: preserve-3d;
+    margin-top: 36px;
+    top: 2%;
+    z-index: 100;
+}
+
+.mobilo-card img
+{
+    width: 448px;
+    height: 287px;
+    transition: all 0.01s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.left-container
+{
+    margin-top: 750px;
+    align-self: flex-start;
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+    bottom: -4%;
+    transition: all 0.01s ease-in-out;
+}
+
+.left-container .section-text,.left-container .page-header
+{
+    text-align: left;
+    width: 79%;
+}
+
+.left-container img:first-of-type
+{
+    width: 307px;
+    height: 650px;
+}
+
+.d-none
+{
+    display: none;
+}
+
+.scan-card
+{
+    width: 260px;
+    height: 253px;
+    top: 58%;
+    right: 8%;
+}
+
+.imgs-container
+{
+    position: relative;
+}
+
+.mobile-imgs
+{
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    position: absolute;
+}
+
+.iphone-icon
+{
+    width: 100px;
+    height: 100px;
+    top: 65%;
+    right: 35%;
+    z-index: 11;
+}
+
+.contact
+{
+    width: 274px;
+    height: 621px;
+    top: 2%;
+    right: 5%;
+}
+
+.start-btn
+{
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    height: 55px;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #d33f49, #fe7575);
+    border-radius: 8px;
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    align-items: center;
+    border: none;
+}
+
+.start-btn:hover
+{
+    background-image: linear-gradient(90deg, #d33f49, #ffa5a5);
+}
+
+.final-section
+{
+    position: fixed;
+    top: 100%;
+    opacity: 0;
+    left: 12%;
+}
+
+.final-section h2
+{
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.chat-btn
+{
+    background: linear-gradient(135deg, rgb(15, 30, 53), rgb(15, 30, 53));
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+    width: 60px;
+    height: 60px;
+}
+
+.chat-bot-logo
+{
+    width: 36px;
+    height: 36px;
+}
+
+/* smaller screens */
+
+@media (max-width:1280px)
+{
+    .page-header
+    {
+        font-size: 48px;
+        line-height: 63px;
+        width: 44.8%;
+    }
+
+    .mobilo-card img
+    {
+        width: 390px;
+        height: 250px;
+    }
+}
+
+@media (max-width:1280px)
+{
+    .page-header
+    {
+        font-size: 48px;
+        line-height: 63px;
+        width: 44.8%;
+    }
+
+    .mobilo-card img
+    {
+        width: 390px;
+        height: 250px;
+    }
+}
+
+@media (min-width:1000px)
+{
+    body
+    {
+        height: 3520px;
+    }
+}
+
+@media (max-width:1000px)
+{
+    .left-container
+    {
+        display: none;
+    }
+
+    .final-section
+    {
+        position: static;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .start-btn
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:750px)
+{
+    .section-text
+    {
+        font-size: 20px;
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    h1.page-header
+    {
+        margin-top: 50px;
+    }
+
+    .page-header
+    {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .final-section .page-header
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width:450px)
+{
+    .mobilo-card img
+    {
+        width: 280px;
+        height: 178px;
+    }
+}
